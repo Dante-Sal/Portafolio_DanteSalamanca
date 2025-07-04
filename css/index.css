@@ -1,0 +1,71 @@
+:root {
+    --hex-light-emphasis: #d6d6d6;
+    --hex-primary-emphasis: #ffee32;
+    --hex-regular: #ffd100;
+    --hex-dark: #202020;
+    --hex-semidark: #333533;
+    --rgb-light-emphasis: 214 214 214;
+    --rgb-primary-emphasis: 255 238 50;
+    --rgb-regular: 255 209 0;
+    --rgb-dark: 32 32 32;
+    --rgb-semidark: 51 53 51;
+}
+
+body {
+    margin: 0;
+    background-color: var(--hex-dark);
+}
+
+.navbar {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    width: 100vw;
+    height: 3vw;
+    background-color: rgba(var(--rgb-primary-emphasis)/ .5);
+    border-bottom: .1vw solid var(--hex-primary-emphasis);
+    backdrop-filter: blur(.3vw);
+}
+
+.navbar .navbar__menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+
+.navbar .navbar__menu a {
+    color: var(--hex-dark);
+    font-size: .7vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    transition: .5s ease;
+}
+
+.navbar .navbar__menu a:hover {
+    transform: scale(1.3);
+}
+
+.navbar .navbar__menu a:active {
+    transform: scale(1.1);
+}
+
+.banner .banner__bgimg {
+    position: absolute;
+    width: 100vw;
+    height: 70vh;
+    background-image: url("https://resizer.glanacion.com/resizer/v2/el-dia-internacional-del-programador-se-celebra-VQV3UUONR5EJNJUGNXZF2IGP3A.jpg?auth=090a49b5ceca8f981a102997d13190656d6cccefc17023f7f4048ffd39bdcc68&width=1280&height=854&quality=70&smart=true");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner .banner__bgfilter {
+    position: absolute;
+    width: 100vw;
+    height: 70vh;
+}
