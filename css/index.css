@@ -156,11 +156,14 @@ section {
 
 .aboutme {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 70vh;
-    padding: 0 2.5vw;
     height: 70vh;
+}
+
+.aboutme .aboutme__img {
+    width: 15vw;
 }
 
 .aboutme .aboutme__info .aboutme__info--title {
@@ -170,13 +173,13 @@ section {
     text-align: right;
 }
 
-.aboutme .aboutme__info .aboutme__info--title span {
+.aboutme .aboutme__info .aboutme__info--title span, .skills .skills__title span {
     color: var(--hex-primary-emphasis);
 }
 
 .aboutme .aboutme__info .aboutme__info--description {
     margin: 0;
-    width: 40vw;
+    width: 55vw;
     color: rgba(var(--rgb-light-emphasis)/ .5);
     font-size: 1.1vw;
     text-align: right;
@@ -184,4 +187,51 @@ section {
 
 .aboutme .aboutme__info .aboutme__info--description span {
     color: var(--hex-primary-emphasis);
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 100vw;
+    height: 35vh;
+    background-color: var(--hex-semidark);
+}
+
+.skills .skills__title {
+    color: var(--hex-light-emphasis);
+    font-size: 2vw;
+}
+
+.skills .skills__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1vw;
+    width: 100vw;
+}
+
+.skills .skills__container .skills__container--ability {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 7vw;
+    height: 8vw;
+    transition: .5s ease;
+}
+
+.skills .skills__container .skills__container--ability:hover {
+    transform: scale(1.2);
+}
+
+.skills .skills__container .skills__container--ability .skills__container--ability__logo {
+    height: 4vw;
+}
+
+.skills .skills__container .skills__container--ability .skills__container--ability__name {
+    color: var(--hex-light-emphasis);
+    font-size: 1.3vw;
 }
