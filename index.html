@@ -8,18 +8,28 @@
 </head>
 <body>
     <nav class="navbar">
-        <img class="navbar__logo" src=""/>
+        <a class="navbar__logo--link" href="#banner"><img class="navbar__logo" src="./storage/img/DSlogo.png"/></a>
         <div class="navbar__menu">
-            <a href="#">Inicio</a>
-            <a href="#">Sobre mí</a>
+            <a href="#banner">Inicio</a>
+            <a href="#aboutme">Sobre mí</a>
             <a href="#">Mis habilidades técnicas</a>
             <a href="#">Mis proyectos</a>
             <a href="#">Contáctame!</a>
         </div>
     </nav>
-    <section class="banner">
+    <section id="banner" class="banner">
         <div class="banner__bgimg"></div>
-        <div class="banner__bgfilter"></div>
+        <div class="banner__bgfilter">
+            <h1 class="banner__bgfilter--title"><span>D</span>ANTE <span>S</span>ALAMANCA <span>G</span>ALVIS</h1>
+            <p class="banner__bgfilter--slogan">&lt;desarrollo software enfocado en calidad/&gt;</p>
+            <a class="banner__bgfilter--btn" href="./storage/files/HV.DANTE.SALAMANCA.DESARROLLADORSOFTWARE.pdf" download="HV.DANTE.SALAMANCA.DESARROLLADORSOFTWARE.pdf">Descargar HV</a>
+        </div>
+    </section>
+    <section id="aboutme" class="aboutme">
+        <div class="aboutme__info">
+            <h1 class="aboutme__info--title">Sobre mí<span>.</span></h1>
+            <p class="aboutme__info--description"><em>Hola!</em> Me alegra enormemente que estés aquí! Me presento... mi nombre es <span>Simón Dante Salamanca Galvis</span>, pero puedes llamarme simplemente <strong>Dante</strong>! Aunque no crecí con la <em>programación</em>, desde que la descubrí en 9° supe que era el camino que quería seguir.<br/><br/>Hoy me dedico con <strong>compromiso</strong> y enfoque a cada proyecto, buscando siempre la <span><strong>calidad</strong></span> y la <span><strong>mejora constante</strong></span>. Me gusta conectar con las personas, aportar ideas <span>creativas</span> y trabajar en equipo.<br/><br/><em>¡Espero que algún día podamos trabajar juntos!</em></p>
+        </div>
     </section>
 </body>
 </html>
