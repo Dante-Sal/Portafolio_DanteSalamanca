@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Portafolio | Dante Salamanca Galvis</title>
     <link rel="stylesheet" href="./css/index.css"/>
-    <link rel="shortcut icon" href="./storage/img/DSicon.png" type="image/png">
+    <link rel="shortcut icon" href="./storage/img/icons/DSicon.png" type="image/png">
 </head>
 <body>
     <nav class="navbar">
-        <a class="navbar__logo--link" href="#banner"><img class="navbar__logo" src="./storage/img/DSlogo.png"/></a>
+        <a class="navbar__logo--link" href="#banner"><img class="navbar__logo" src="./storage/img/icons/DSlogo.png"/></a>
         <div class="navbar__menu">
             <a href="#banner">Inicio</a>
             <a href="#aboutme">Sobre mí</a>
@@ -27,7 +27,7 @@
         </div>
     </section>
     <section id="aboutme" class="aboutme">
-        <img class="aboutme__img" src="./storage/img/aboutmeIcon.png"/>
+        <img class="aboutme__img" src="./storage/img/icons/aboutmeIcon.png"/>
         <div class="aboutme__info">
             <h1 class="aboutme__info--title">Sobre mí<span>.</span></h1>
             <p class="aboutme__info--description"><em>Hola!</em> Me alegra enormemente que estés aquí! Me presento... mi nombre es <span>Simón Dante Salamanca Galvis</span>, pero puedes llamarme simplemente <strong>Dante</strong>! Aunque no crecí con la <em>programación</em>, desde que la descubrí en 9° supe que era el camino que quería seguir.<br/><br/>Hoy me dedico con <strong>compromiso</strong> y enfoque a cada proyecto, buscando siempre la <span><strong>calidad</strong></span> y la <span><strong>mejora constante</strong></span>. Me gusta conectar con las personas, aportar ideas <span>creativas</span> y trabajar en equipo.<br/><br/><em>¡Espero que algún día podamos trabajar juntos!</em></p>
@@ -37,32 +37,75 @@
         <h1 class="skills__title">Mis habilidades técnicas<span>.</span></h1>
         <div class="skills__container">
             <div class="skills__container--ability">
-                <img class="skills__container--ability__logo" src="./storage/img/python.png"/>
+                <img class="skills__container--ability__logo" src="./storage/img/technologies_abilities/python.png"/>
                 <p class="skills__container--ability__name">Python</p>
             </div>
             <div class="skills__container--ability">
-                <img class="skills__container--ability__logo" src="./storage/img/git.png"/>
+                <img class="skills__container--ability__logo" src="./storage/img/technologies_abilities/json.png"/>
+                <p class="skills__container--ability__name">JSON</p>
+            </div>
+            <div class="skills__container--ability">
+                <img class="skills__container--ability__logo" src="./storage/img/technologies_abilities/git.png"/>
                 <p class="skills__container--ability__name">Git</p>
             </div>
             <div class="skills__container--ability">
-                <img class="skills__container--ability__logo" src="./storage/img/html.png"/>
+                <img class="skills__container--ability__logo" src="./storage/img/technologies_abilities/html.png"/>
                 <p class="skills__container--ability__name">HTML</p>
             </div>
             <div class="skills__container--ability">
-                <img class="skills__container--ability__logo" src="./storage/img/css.png"/>
+                <img class="skills__container--ability__logo" src="./storage/img/technologies_abilities/css.png"/>
                 <p class="skills__container--ability__name">CSS</p>
             </div>
             <div class="skills__container--ability">
-                <img class="skills__container--ability__logo" src="./storage/img/javascript.png"/>
+                <img class="skills__container--ability__logo" src="./storage/img/technologies_abilities/javascript.png"/>
                 <p class="skills__container--ability__name">JavaScript</p>
             </div>
             <div class="skills__container--ability">
-                <img class="skills__container--ability__logo" src="./storage/img/mysql.png"/>
+                <img class="skills__container--ability__logo" src="./storage/img/technologies_abilities/mysql.png"/>
                 <p class="skills__container--ability__name">MySQL</p>
             </div>
             <div class="skills__container--ability">
-                <img class="skills__container--ability__logo" src="./storage/img/mongodb.png"/>
+                <img class="skills__container--ability__logo" src="./storage/img/technologies_abilities/mongodb.png"/>
                 <p class="skills__container--ability__name">MongoDB</p>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="projects">
+        <h1 class="projects__title">Mis proyectos<span>.</span></h1>
+        <div class="projects__card">
+            <img class="projects__card--img" src=""/>
+            <div class="projects__card--infocontainer">
+                <div class="projects__card--infocontainer__header">
+                    <p class="projects__card--infocontainer__title">Sistema Campuslands</p>
+                    <div class="projects__card--infocontainer__technologies">
+                        <img src="./storage/img/technologies_abilities/python.png"/>
+                        <img src="./storage/img/technologies_abilities/json.png"/>
+                        <img src="./storage/img/technologies_abilities/git.png"/>
+                    </div>
+                </div>
+                <p class="projects__card--infocontainer__description">Durante mi formación en el bootcamp Campuslands, desarrollé un sistema que replica su estructura interna. Implementé funcionalidades CRUD para campers, trainers, coordinadores, notas y asignaturas (rutas y skills), además de un sistema de inicio de sesión con roles diferenciados. Cada usuario accede a funciones específicas mediante un menú. La persistencia de datos se manejó con archivos en formato JSON.</p>
+                <div class="projects__card--infocontainer__btns">
+                    <a href="https://github.com/Dante-Sal/Proyecto_Python_RomanMateoSalamancaDante" target="_blank">Go to Repo</a>
+                    <a href="https://www.loom.com/share/71ddecfb6f4248cbb2036d03300555ac?sid=c85bcd00-36db-4253-b10a-5f8dd59d6b9a" target="_blank">Watch Overview</a>
+                </div>
+            </div>
+        </div>
+        <div class="projects__card">
+            <img class="projects__card--img" src=""/>
+            <div class="projects__card--infocontainer">
+                <div class="projects__card--infocontainer__header">
+                    <p class="projects__card--infocontainer__title">KARIO Media</p>
+                    <div class="projects__card--infocontainer__technologies">
+                        <img src="./storage/img/technologies_abilities/git.png"/>
+                        <img src="./storage/img/technologies_abilities/html.png"/>
+                        <img src="./storage/img/technologies_abilities/css.png"/>
+                    </div>
+                </div>
+                <p class="projects__card--infocontainer__description">Proyecto de enfoque visual creado con HTML5 y CSS3. Se desarrolló una simulación de plataforma para gestión de proyectos, con panel de inicio de sesión y navegación entre páginas que representan acciones como agregar, eliminar y reportar proyectos. Al no usar JavaScript ni bases de datos, la interactividad es limitada. Incluye un diseño parcialmente responsivo.</p>
+                <div class="projects__card--infocontainer__btns">
+                    <a href="https://github.com/SxntiagoJP/Proyecto_HTML_S1_SalamancaDante-JaimesSantiago" target="_blank">Go to Repo</a>
+                    <a href="https://sxntiagojp.github.io/Proyecto_HTML_S1_SalamancaDante-JaimesSantiago/" target="_blank">Go to the Website</a>
+                </div>
             </div>
         </div>
     </section>
