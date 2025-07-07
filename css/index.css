@@ -142,6 +142,7 @@ section {
     color: var(--hex-dark);
     background-color: var(--hex-primary-emphasis);
     border-radius: 3vw;
+    font-size: 1vw;
     text-decoration: none;
     transition: .5s ease;
 }
@@ -173,7 +174,7 @@ section {
     text-align: right;
 }
 
-.aboutme .aboutme__info .aboutme__info--title span, .skills .skills__title span {
+.aboutme .aboutme__info .aboutme__info--title span, .skills .skills__title span, .projects .projects__title span {
     color: var(--hex-primary-emphasis);
 }
 
@@ -234,4 +235,97 @@ section {
 .skills .skills__container .skills__container--ability .skills__container--ability__name {
     color: var(--hex-light-emphasis);
     font-size: 1.3vw;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5vw;
+}
+
+.projects .projects__title {
+    width: 100%;
+    color: var(--hex-light-emphasis);
+    font-size: 3vw;
+    text-align: left;
+}
+
+.projects .projects__card {
+    display: flex;
+    margin-bottom: 2vw;
+    width: 100%;
+    background-color: var(--hex-light-emphasis);
+    border-radius: 1vw;
+}
+
+.projects .projects__card .projects__card--img {
+    width: 47.5vw;
+    height: 25vw;
+    border-radius: 1vw 0 0 1vw;
+    object-fit: cover;
+    object-position: left;
+    aspect-ratio: 2 / 1;
+}
+
+.projects .projects__card .projects__card--infocontainer {
+    width: 50%;
+    padding: 1vw;
+}
+
+.projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__header .projects__card--infocontainer__title {
+    color: var(--hex-dark);
+    font-size: 2vw;
+}
+
+.projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__technologies {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__technologies img {
+    margin: 0 .3vw;
+    height: 2.5vw;
+}
+
+.projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__description {
+    color: var(--hex-dark);
+    font-size: 1vw;
+}
+
+.projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns .projects__card--infocontainer__repobtn {
+    padding: .5vw 1vw;
+    color: var(--hex-light-emphasis);
+    background-color: var(--hex-dark);
+    border-radius: 2vw;
+    font-size: 1vw;
+    text-decoration: none;
+}
+
+.projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns .projects__card--infocontainer__overviewbtn {
+    padding: .5vw 1vw;
+    color: var(--hex-dark);
+    background-color: rgba(0, 0, 0, 0);
+    border: .1vw solid var(--hex-dark);
+    border-radius: 2vw;
+    font-size: 1vw;
+    text-decoration: none;
+}
+
+.projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns .projects__card--infocontainer__websitebtn {
+    padding: .5vw 1vw;
+    color: var(--hex-dark);
+    background-color: var(--hex-primary-emphasis);
+    border: .1vw solid var(--hex-dark);
+    border-radius: 2vw;
+    font-size: 1vw;
+    text-decoration: none;
 }
