@@ -83,7 +83,7 @@ body {
 }
 
 section {
-  scroll-margin-top: 3vw;
+    scroll-margin-top: 3vw;
 }
 
 .banner {
@@ -111,7 +111,7 @@ section {
     align-items: left;
     width: 100vw;
     height: 70vh;
-    background-image: linear-gradient(to right,rgba(var(--rgb-dark)/ .95) 30%,rgba(var(--rgb-dark)/ 0));
+    background-image: linear-gradient(to right, rgba(var(--rgb-dark)/ .95) 30%, rgba(var(--rgb-dark)/ 0));
 }
 
 .banner .banner__bgfilter .banner__bgfilter--title {
@@ -147,11 +147,17 @@ section {
     transition: .5s ease;
 }
 
-.banner .banner__bgfilter .banner__bgfilter--btn:hover {
+.banner .banner__bgfilter .banner__bgfilter--btn:hover,
+.projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns .projects__card--infocontainer__repobtn:hover,
+.projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns .projects__card--infocontainer__overviewbtn:hover,
+.projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns .projects__card--infocontainer__websitebtn:hover {
     transform: scale(1.1);
 }
 
-.banner .banner__bgfilter .banner__bgfilter--btn:active {
+.banner .banner__bgfilter .banner__bgfilter--btn:active,
+.projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns .projects__card--infocontainer__repobtn:active,
+.projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns .projects__card--infocontainer__overviewbtn:active,
+.projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns .projects__card--infocontainer__websitebtn:active {
     transform: scale(1.05);
 }
 
@@ -174,7 +180,10 @@ section {
     text-align: right;
 }
 
-.aboutme .aboutme__info .aboutme__info--title span, .skills .skills__title span, .projects .projects__title span {
+.aboutme .aboutme__info .aboutme__info--title span,
+.skills .skills__title span,
+.projects .projects__title span,
+.contacts .contacts__title span {
     color: var(--hex-primary-emphasis);
 }
 
@@ -190,7 +199,7 @@ section {
     color: var(--hex-primary-emphasis);
 }
 
-.skills {
+.skills, .contacts {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -201,7 +210,7 @@ section {
     background-color: var(--hex-semidark);
 }
 
-.skills .skills__title {
+.skills .skills__title, .contacts .contacts__title {
     color: var(--hex-light-emphasis);
     font-size: 2vw;
 }
@@ -258,6 +267,11 @@ section {
     width: 100%;
     background-color: var(--hex-light-emphasis);
     border-radius: 1vw;
+    transition: .3s ease;
+}
+
+.projects .projects__card:hover {
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.25);
 }
 
 .projects .projects__card .projects__card--img {
@@ -271,7 +285,7 @@ section {
 
 .projects .projects__card .projects__card--infocontainer {
     width: 50%;
-    padding: 1vw;
+    padding: 1vw 2.5vw;
 }
 
 .projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__header {
@@ -301,16 +315,24 @@ section {
     font-size: 1vw;
 }
 
+.projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns {
+    margin-top: 4vw;
+}
+
 .projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns .projects__card--infocontainer__repobtn {
+    display: inline-block;
+    margin-right: 1vw;
     padding: .5vw 1vw;
     color: var(--hex-light-emphasis);
     background-color: var(--hex-dark);
     border-radius: 2vw;
     font-size: 1vw;
     text-decoration: none;
+    transition: .3s ease;
 }
 
 .projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns .projects__card--infocontainer__overviewbtn {
+    display: inline-block;
     padding: .5vw 1vw;
     color: var(--hex-dark);
     background-color: rgba(0, 0, 0, 0);
@@ -318,14 +340,25 @@ section {
     border-radius: 2vw;
     font-size: 1vw;
     text-decoration: none;
+    transition: .3s ease;
 }
 
 .projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns .projects__card--infocontainer__websitebtn {
+    display: inline-block;
     padding: .5vw 1vw;
     color: var(--hex-dark);
     background-color: var(--hex-primary-emphasis);
-    border: .1vw solid var(--hex-dark);
     border-radius: 2vw;
     font-size: 1vw;
     text-decoration: none;
+    transition: .3s ease;
+}
+
+.contacts .contacts__socialmedia .contacts__socialmedia--btn img {
+    margin: 1vw;
+    height: 3vw;
+    width: 9vw;
+    border-radius: 3vw;
+    aspect-ratio: 3 / 1;
+    object-fit: contain;
 }
