@@ -83,7 +83,7 @@ body {
 }
 
 section {
-    scroll-margin-top: 3vw;
+    scroll-margin-top: 1.5vw;
 }
 
 .banner {
@@ -150,15 +150,16 @@ section {
 .banner .banner__bgfilter .banner__bgfilter--btn:hover,
 .projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns .projects__card--infocontainer__repobtn:hover,
 .projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns .projects__card--infocontainer__overviewbtn:hover,
-.projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns .projects__card--infocontainer__websitebtn:hover {
+.projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns .projects__card--infocontainer__websitebtn:hover,
+.contacts .contacts__socialmedia .contacts__socialmedia--btn img:hover {
     transform: scale(1.1);
 }
 
 .banner .banner__bgfilter .banner__bgfilter--btn:active,
 .projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns .projects__card--infocontainer__repobtn:active,
 .projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns .projects__card--infocontainer__overviewbtn:active,
-.projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns .projects__card--infocontainer__websitebtn:active {
-    transform: scale(1.05);
+.projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns .projects__card--infocontainer__websitebtn:active,
+.contacts .contacts__socialmedia .contacts__socialmedia--btn img:active {    transform: scale(1.05);
 }
 
 .aboutme {
@@ -366,10 +367,12 @@ section {
 
 .contacts .contacts__info .contacts__info--container {
     display: flex;
+    align-items: center;
 }
 
 .contacts .contacts__info .contacts__info--container .contacts__info--img {
-    height: 1vw;
+    margin-right: .5vw;
+    height: 2vw;
 }
 
 .contacts .contacts__info .contacts__info--container .contacts__info--description {
@@ -377,13 +380,18 @@ section {
     font-size: 1vw;
 }
 
+.contacts .contacts__socialmedia {
+    margin-top: 1.5vw;
+}
+
 .contacts .contacts__socialmedia .contacts__socialmedia--btn img {
-    margin: .5vw;
+    margin: 1vw;
     height: 3vw;
     width: 9vw;
     border-radius: 3vw;
     aspect-ratio: 3 / 1;
     object-fit: contain;
+    transition: .3s ease;
 }
 
 .contacts .contacts__socialmedia .--github img {
