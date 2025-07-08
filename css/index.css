@@ -354,11 +354,42 @@ section {
     transition: .3s ease;
 }
 
+.contacts {
+    margin: 0;
+    padding-bottom: 1.5vw;
+}
+
+.contacts .contacts__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contacts .contacts__info .contacts__info--container {
+    display: flex;
+}
+
+.contacts .contacts__info .contacts__info--container .contacts__info--img {
+    height: 1vw;
+}
+
+.contacts .contacts__info .contacts__info--container .contacts__info--description {
+    color: var(--hex-light-emphasis);
+    font-size: 1vw;
+}
+
 .contacts .contacts__socialmedia .contacts__socialmedia--btn img {
-    margin: 1vw;
+    margin: .5vw;
     height: 3vw;
     width: 9vw;
     border-radius: 3vw;
     aspect-ratio: 3 / 1;
     object-fit: contain;
+}
+
+.contacts .contacts__socialmedia .--github img {
+    background-color: #000000;
+}
+
+.contacts .contacts__socialmedia .--linkedin img {
+    background-color: #0A66C3;
 }
