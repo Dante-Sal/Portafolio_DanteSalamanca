@@ -96,7 +96,7 @@ section {
     position: absolute;
     width: 100vw;
     height: 70vh;
-    background-image: url("https://resizer.glanacion.com/resizer/v2/el-dia-internacional-del-programador-se-celebra-VQV3UUONR5EJNJUGNXZF2IGP3A.jpg?auth=090a49b5ceca8f981a102997d13190656d6cccefc17023f7f4048ffd39bdcc68&width=1280&height=854&quality=70&smart=true");
+    background-image: url("../storage/img/banner.jpeg");
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -112,6 +112,7 @@ section {
     width: 100vw;
     height: 70vh;
     background-image: linear-gradient(to right, rgba(var(--rgb-dark)/ .95) 30%, rgba(var(--rgb-dark)/ 0));
+    backdrop-filter: saturate(0);
 }
 
 .banner .banner__bgfilter .banner__bgfilter--title {
@@ -211,6 +212,10 @@ section {
     background-color: var(--hex-semidark);
 }
 
+.soft_skills {
+    margin-top: 3vw;
+}
+
 .skills .skills__title, .contacts .contacts__title {
     color: var(--hex-light-emphasis);
     font-size: 2vw;
@@ -245,6 +250,13 @@ section {
 .skills .skills__container .skills__container--ability .skills__container--ability__name {
     color: var(--hex-light-emphasis);
     font-size: 1.3vw;
+}
+
+.skills .skills__container .skills__container--ability .soft_skills__container--ability__name {
+    width: 11.5vw;
+    color: var(--hex-light-emphasis);
+    font-size: 1vw;
+    text-align: center;
 }
 
 .projects {
