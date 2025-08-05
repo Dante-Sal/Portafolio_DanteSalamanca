@@ -63,7 +63,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 60%;
+    width: 75%;
     height: 100%;
 }
 
@@ -160,7 +160,8 @@ section {
 .projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns .projects__card--infocontainer__repobtn:active,
 .projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns .projects__card--infocontainer__overviewbtn:active,
 .projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns .projects__card--infocontainer__websitebtn:active,
-.contacts .contacts__socialmedia .contacts__socialmedia--btn img:active {    transform: scale(1.05);
+.contacts .contacts__socialmedia .contacts__socialmedia--btn img:active {
+    transform: scale(1.05);
 }
 
 .aboutme {
@@ -171,25 +172,79 @@ section {
     height: 70vh;
 }
 
-.aboutme .aboutme__img {
-    width: 15vw;
-}
-
-.aboutme .aboutme__info .aboutme__info--title {
+.aboutme .aboutme__info .aboutme__info--title,
+.professional_goals .professional_goals__info .professional_goals__info--title,
+.services .services__info .services__info--title,
+.services .services__info ul li h2 {
     margin: 0 0 1vw 0;
     color: var(--hex-light-emphasis);
     font-size: 2.5vw;
     text-align: right;
 }
 
+.mvv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+    padding: 5vw 0 6vw;
+}
+
+.mvv .mvv__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 23vw;
+    margin: auto 3vw;
+}
+
+.mvv .mvv__values {
+    width: 45vw;
+}
+
+.mvv .mvv__info img {
+    width: 5vw;
+}
+
+.mvv .mvv__info .mvv__info--title {
+    color: var(--hex-light-emphasis);
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+.mvv .mvv__info .mvv__info--description {
+    margin: 0;
+    color: rgba(var(--rgb-light-emphasis)/ .5);
+    text-align: left;
+}
+
+.mvv .mvv__mission .mvv__info--description {
+    font-size: 1.35vw;
+}
+
+.mvv .mvv__vision .mvv__info--description {
+    font-size: 1.23vw;
+}
+
+.mvv .mvv__values .mvv__info--description {
+    font-size: 1vw;
+}
+
 .aboutme .aboutme__info .aboutme__info--title span,
 .skills .skills__title span,
 .projects .projects__title span,
+.professional_goals .professional_goals__info .professional_goals__info--title span,
+.services .services__info .services__info--title span,
+.mvv .mvv__info .mvv__info--title span,
 .contacts .contacts__title span {
     color: var(--hex-primary-emphasis);
 }
 
-.aboutme .aboutme__info .aboutme__info--description {
+.aboutme .aboutme__info .aboutme__info--description,
+.professional_goals .professional_goals__info .professional_goals__info--description,
+.services .services__info .services__info--description,
+.services .services__info ul li>p {
     margin: 0;
     width: 55vw;
     color: rgba(var(--rgb-light-emphasis)/ .5);
@@ -197,11 +252,17 @@ section {
     text-align: right;
 }
 
-.aboutme .aboutme__info .aboutme__info--description span {
+.aboutme .aboutme__info .aboutme__info--description span,
+.professional_goals .professional_goals__info .professional_goals__info--description span,
+.services .services__info .services__info--description span,
+.services .services__info ul li h2 span,
+.services .services__info ul li>p span,
+.mvv .mvv__info .mvv__info--description span {
     color: var(--hex-primary-emphasis);
 }
 
-.skills, .contacts {
+.skills,
+.contacts {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -216,7 +277,8 @@ section {
     margin-top: 3vw;
 }
 
-.skills .skills__title, .contacts .contacts__title {
+.skills .skills__title,
+.contacts .contacts__title {
     color: var(--hex-light-emphasis);
     font-size: 2vw;
 }
@@ -365,6 +427,65 @@ section {
     font-size: 1vw;
     text-decoration: none;
     transition: .3s ease;
+}
+
+.professional_goals,
+.services {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+    padding: 0 3.3vw 5vw;
+    height: 50vh;
+}
+
+.professional_goals img,
+.services img {
+    width: 25vw;
+}
+
+.services {
+    padding-top: 5vw;
+    height: 80vh;
+    background-color: var(--hex-semidark);
+}
+
+.services .services__info .services__info--title,
+.services .services__info .services__info--description,
+.services .services__info ul li h2,
+.services .services__info ul li>p {
+    text-align: left;
+}
+
+.services .services__info .services__info--description,
+.services .services__info ul li>p {
+    width: 65vw;
+}
+
+.services .services__info ul {
+    list-style-type: none;
+    margin-top: 3vw;
+    padding-left: 2.5vw;
+}
+
+.services .services__info ul li {
+    position: relative;
+    margin-bottom: 1.8vw;
+}
+
+.services .services__info ul li::before {
+    content: '';
+    position: absolute;
+    left: -2.5vw;
+    top: 50%;
+    transform: translateY(-50%);
+    width: .5vw;
+    height: .5vw;
+    background-color: var(--hex-primary-emphasis);
+}
+
+.services .services__info ul li h2 {
+    font-size: 1.6vw;
 }
 
 .contacts {
