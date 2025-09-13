@@ -1,0 +1,168 @@
+@media (max-width: 1200px) {
+  section { scroll-margin-top: 80px; }
+  .projects .projects__card .projects__card--infocontainer__description { font-size: 1.05rem; }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    height: 56px;
+    background-color: rgba(var(--rgb-primary-emphasis)/ .7);
+    border-bottom-width: 2px;
+  }
+  .navbar .navbar__logo--link .navbar__logo { height: 28px; margin-left: 16px; opacity: .9; }
+  .navbar .navbar__menu {
+    width: auto;
+    max-width: 100%;
+    padding: 0 12px;
+    gap: 16px;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+  .navbar .navbar__menu a {
+    scroll-snap-align: start;
+    font-size: 13px;
+    padding: 6px 0;
+  }
+
+  section { scroll-margin-top: 72px; }
+
+  .banner { top: 56px; }
+  .banner .banner__bgimg,
+  .banner .banner__bgfilter { height: 60vh; }
+  .banner .banner__bgimg { background-attachment: scroll; }
+  .banner .banner__bgfilter .banner__bgfilter--title {
+    font-size: clamp(28px, 6.5vw, 52px);
+    margin: 0 0 12px 20px;
+  }
+  .banner .banner__bgfilter .banner__bgfilter--title span { font-size: clamp(32px, 7.5vw, 60px); }
+  .banner .banner__bgfilter .banner__bgfilter--slogan {
+    font-size: clamp(14px, 2.2vw, 20px);
+    margin: 0 0 24px 20px;
+  }
+  .banner .banner__bgfilter .banner__bgfilter--btn {
+    width: 180px; height: 42px; font-size: 14px; margin-left: 20px;
+  }
+
+  .aboutme {
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px 0;
+    height: auto;
+    margin-top: calc(60vh + 56px);
+  }
+  .aboutme iframe {
+    width: 90vw !important;
+    height: calc(90vw * 9 / 16) !important;
+    max-width: 720px;
+    border-radius: 8px;
+  }
+  .aboutme .aboutme__info { padding: 0 20px; }
+  .aboutme .aboutme__info .aboutme__info--title {
+    text-align: left; font-size: clamp(22px, 4vw, 32px);
+  }
+  .aboutme .aboutme__info .aboutme__info--description {
+    width: 100%; text-align: left; font-size: 16px;
+  }
+
+  .skills, .contacts { height: auto; padding: 32px 0; }
+  .skills .skills__title { font-size: clamp(20px, 4vw, 28px); }
+  .skills .skills__container {
+    flex-wrap: wrap; gap: 16px 10px; padding: 0 12px;
+  }
+  .skills .skills__container .skills__container--ability {
+    width: 28vw; height: auto;
+  }
+  .skills .skills__container .skills__container--ability .skills__container--ability__logo {
+    height: clamp(40px, 7vw, 64px);
+  }
+  .skills .skills__container .skills__container--ability .skills__container--ability__name {
+    font-size: clamp(14px, 2.8vw, 18px);
+  }
+  .skills .skills__container .skills__container--ability .soft_skills__container--ability__name {
+    width: auto; font-size: clamp(13px, 2.6vw, 16px);
+  }
+
+  .projects { margin: 24px 16px; }
+  .projects .projects__title { font-size: clamp(22px, 5vw, 36px); }
+  .projects .projects__card {
+    flex-direction: column; border-radius: 12px; overflow: hidden;
+  }
+  .projects .projects__card .projects__card--img {
+    width: 100%; height: auto; aspect-ratio: 16 / 9; object-position: center;
+    border-radius: 12px 12px 0 0;
+  }
+  .projects .projects__card .projects__card--infocontainer {
+    width: 100%; padding: 16px;
+  }
+  .projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__header {
+    gap: 8px;
+  }
+  .projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__title {
+    font-size: clamp(18px, 4.5vw, 26px);
+  }
+  .projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__technologies img {
+    height: 28px; margin: 0 4px;
+  }
+  .projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__description {
+    font-size: 15px; line-height: 1.5;
+  }
+  .projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns {
+    margin-top: 16px;
+  }
+  .projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns a {
+    font-size: 14px !important; padding: 8px 14px !important; border-radius: 999px !important;
+  }
+
+  .professional_goals, .services {
+    height: auto; padding: 24px 16px; flex-direction: column; gap: 20px;
+  }
+  .professional_goals img, .services img { width: min(420px, 90vw); }
+  .professional_goals .professional_goals__info .professional_goals__info--title,
+  .services .services__info .services__info--title { font-size: clamp(20px, 4.5vw, 30px); text-align: left; }
+  .professional_goals .professional_goals__info .professional_goals__info--description,
+  .services .services__info .services__info--description { width: 100%; font-size: 16px; text-align: left; }
+  .services .services__info ul { margin-top: 16px; padding-left: 18px; }
+  .services .services__info ul li { margin-bottom: 16px; }
+  .services .services__info ul li::before { left: -18px; width: 8px; height: 8px; }
+  .services .services__info ul li h2 { font-size: clamp(16px, 3.6vw, 22px); }
+
+  .mvv {
+    flex-direction: column; gap: 28px; padding: 32px 0 40px;
+  }
+  .mvv .mvv__info { width: 90vw; margin: 0; }
+  .mvv .mvv__values { width: 90vw; }
+  .mvv .mvv__info img { width: 56px; }
+  .mvv .mvv__info .mvv__info--title { font-size: clamp(20px, 4.5vw, 28px); }
+  .mvv .mvv__info .mvv__info--description { font-size: 16px; }
+
+  .contacts .contacts__title { font-size: clamp(20px, 4vw, 28px); }
+  .contacts .contacts__info {
+    display: grid; grid-template-columns: 1fr; gap: 10px; padding: 0 16px;
+  }
+  .contacts .contacts__info .contacts__info--container .contacts__info--img { height: 22px; margin-right: 10px; }
+  .contacts .contacts__info .contacts__info--container .contacts__info--description { font-size: 15px; }
+  .contacts .contacts__socialmedia { margin-top: 16px; }
+  .contacts .contacts__socialmedia .contacts__socialmedia--btn img {
+    height: 44px; width: auto; border-radius: 999px; margin: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Títulos y textos un poco más grandes vs. vw original */
+  .aboutme .aboutme__info .aboutme__info--description,
+  .professional_goals .professional_goals__info .professional_goals__info--description,
+  .services .services__info .services__info--description,
+  .services .services__info ul li > p,
+  .mvv .mvv__info .mvv__info--description { font-size: 15.5px; }
+  .skills .skills__container .skills__container--ability { width: 44vw; }
+}
+
+@media (max-width: 480px) {
+  .navbar .navbar__menu a { font-size: 12px; }
+  .banner .banner__bgfilter .banner__bgfilter--btn { width: 160px; height: 40px; font-size: 13px; }
+  .projects .projects__card .projects__card--infocontainer__technologies img { height: 24px; }
+  .projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__description { font-size: 14.5px; }
+  .services .services__info ul li h2 { font-size: 18px; }
+}
