@@ -11,6 +11,13 @@
     --rgb-semidark: 51 53 51;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
 html {
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -83,13 +90,18 @@ body {
 }
 
 section {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
     scroll-margin-top: 1.5vw;
 }
 
 .banner {
-    position: absolute;
-    top: 3vw;
-    left: 0;
+    position: relative;
+    margin-top: 3vw;
+    height: 70vh;
+    overflow: hidden;
 }
 
 .banner .banner__bgimg {
@@ -168,14 +180,14 @@ section {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 73vh;
+    margin-top: 0vh;
     height: 70vh;
 }
 
 .aboutme .aboutme__info .aboutme__info--title,
 .professional_goals .professional_goals__info .professional_goals__info--title,
 .services .services__info .services__info--title,
-.services .services__info ul li h2 {
+.services .services__info ul li h3 {
     margin: 0 0 1vw 0;
     color: var(--hex-light-emphasis);
     font-size: 2.5vw;
@@ -255,7 +267,7 @@ section {
 .aboutme .aboutme__info .aboutme__info--description span,
 .professional_goals .professional_goals__info .professional_goals__info--description span,
 .services .services__info .services__info--description span,
-.services .services__info ul li h2 span,
+.services .services__info ul li h3 span,
 .services .services__info ul li>p span,
 .mvv .mvv__info .mvv__info--description span {
     color: var(--hex-primary-emphasis);
@@ -269,7 +281,7 @@ section {
     align-items: center;
     padding: 0;
     width: 100vw;
-    height: 35vh;
+    height: auto;
     background-color: var(--hex-semidark);
 }
 
@@ -285,10 +297,20 @@ section {
 
 .skills .skills__container {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin-top: 1vw;
     width: 100vw;
+}
+
+.skills .skills__container .skills__container--row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1vw;
+    width: 100%;
+    height: auto;
 }
 
 .skills .skills__container .skills__container--ability {
@@ -318,6 +340,10 @@ section {
     width: 11.5vw;
     color: var(--hex-light-emphasis);
     font-size: 1vw;
+    text-align: center;
+}
+
+.long_named_technology {
     text-align: center;
 }
 
@@ -436,7 +462,7 @@ section {
     align-items: center;
     margin-top: 0;
     padding: 0 3.3vw 5vw;
-    height: 50vh;
+    height: auto;
 }
 
 .professional_goals img,
@@ -446,13 +472,12 @@ section {
 
 .services {
     padding-top: 5vw;
-    height: 80vh;
     background-color: var(--hex-semidark);
 }
 
 .services .services__info .services__info--title,
 .services .services__info .services__info--description,
-.services .services__info ul li h2,
+.services .services__info ul li h3,
 .services .services__info ul li>p {
     text-align: left;
 }
@@ -484,13 +509,14 @@ section {
     background-color: var(--hex-primary-emphasis);
 }
 
-.services .services__info ul li h2 {
+.services .services__info ul li h3 {
     font-size: 1.6vw;
 }
 
 .contacts {
+    height: auto;
     margin: 0;
-    padding: 1vw 1vw 2.5vw 1vw;
+    padding: 0 1vw 1vw 1vw;
 }
 
 .contacts .contacts__info {

@@ -1,3 +1,4 @@
+
 @media (max-width: 1200px) {
   section { scroll-margin-top: 80px; }
   .projects .projects__card .projects__card--infocontainer__description { font-size: 1.05rem; }
@@ -20,18 +21,20 @@
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
   }
-  .navbar .navbar__menu a {
-    scroll-snap-align: start;
-    font-size: 13px;
-    padding: 6px 0;
-  }
+  .navbar .navbar__menu a { scroll-snap-align: start; font-size: 13px; padding: 6px 0; }
 
   section { scroll-margin-top: 72px; }
 
-  .banner { top: 56px; }
+  .banner {
+    position: relative;
+    top: 0;
+    height: 60vh;
+    margin-top: 56px;
+  }
   .banner .banner__bgimg,
-  .banner .banner__bgfilter { height: 60vh; }
+  .banner .banner__bgfilter { height: 100%; }
   .banner .banner__bgimg { background-attachment: scroll; }
+
   .banner .banner__bgfilter .banner__bgfilter--title {
     font-size: clamp(28px, 6.5vw, 52px);
     margin: 0 0 12px 20px;
@@ -50,7 +53,7 @@
     gap: 24px;
     padding: 32px 0;
     height: auto;
-    margin-top: calc(60vh + 56px);
+    margin-top: 0;
   }
   .aboutme iframe {
     width: 90vw !important;
@@ -68,17 +71,28 @@
 
   .skills, .contacts { height: auto; padding: 32px 0; }
   .skills .skills__title { font-size: clamp(20px, 4vw, 28px); }
-  .skills .skills__container {
-    flex-wrap: wrap; gap: 16px 10px; padding: 0 12px;
+  .skills .skills__container { gap: 18px; padding: 0 12px; }
+
+  .skills .skills__container .skills__container--row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 16px;
+    width: 100%;
   }
-  .skills .skills__container .skills__container--ability {
-    width: 28vw; height: auto;
+
+  .skills .skills__container .skills__container--row .skills__container--ability {
+    flex: 1 1 calc(33.33% - 16px);
+    max-width: 200px;
+    min-width: 120px;
+    height: auto;
   }
   .skills .skills__container .skills__container--ability .skills__container--ability__logo {
     height: clamp(40px, 7vw, 64px);
   }
   .skills .skills__container .skills__container--ability .skills__container--ability__name {
     font-size: clamp(14px, 2.8vw, 18px);
+    text-align: center;
   }
   .skills .skills__container .skills__container--ability .soft_skills__container--ability__name {
     width: auto; font-size: clamp(13px, 2.6vw, 16px);
@@ -93,12 +107,8 @@
     width: 100%; height: auto; aspect-ratio: 16 / 9; object-position: center;
     border-radius: 12px 12px 0 0;
   }
-  .projects .projects__card .projects__card--infocontainer {
-    width: 100%; padding: 16px;
-  }
-  .projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__header {
-    gap: 8px;
-  }
+  .projects .projects__card .projects__card--infocontainer { width: 100%; padding: 16px; }
+  .projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__header { gap: 8px; }
   .projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__title {
     font-size: clamp(18px, 4.5vw, 26px);
   }
@@ -108,9 +118,7 @@
   .projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__description {
     font-size: 15px; line-height: 1.5;
   }
-  .projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns {
-    margin-top: 16px;
-  }
+  .projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns { margin-top: 16px; }
   .projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__btns a {
     font-size: 14px !important; padding: 8px 14px !important; border-radius: 999px !important;
   }
@@ -123,14 +131,26 @@
   .services .services__info .services__info--title { font-size: clamp(20px, 4.5vw, 30px); text-align: left; }
   .professional_goals .professional_goals__info .professional_goals__info--description,
   .services .services__info .services__info--description { width: 100%; font-size: 16px; text-align: left; }
-  .services .services__info ul { margin-top: 16px; padding-left: 18px; }
-  .services .services__info ul li { margin-bottom: 16px; }
-  .services .services__info ul li::before { left: -18px; width: 8px; height: 8px; }
-  .services .services__info ul li h2 { font-size: clamp(16px, 3.6vw, 22px); }
 
-  .mvv {
-    flex-direction: column; gap: 28px; padding: 32px 0 40px;
+  .services .services__info ul {
+    margin-top: 16px;
+    padding-left: 0;
+    width: 100%;
   }
+  .services .services__info ul li {
+    position: relative;
+    display: block;
+    width: 96%;
+    padding-left: 18px;
+    margin-bottom: 16px;
+  }
+  .services .services__info ul li::before {
+    left: 0; width: 8px; height: 8px;
+  }
+  .services .services__info ul li h3 { font-size: clamp(16px, 3.6vw, 22px); }
+  .services .services__info ul li > p { width: 100%; }
+
+  .mvv { flex-direction: column; gap: 28px; padding: 32px 0 40px; }
   .mvv .mvv__info { width: 90vw; margin: 0; }
   .mvv .mvv__values { width: 90vw; }
   .mvv .mvv__info img { width: 56px; }
@@ -138,25 +158,23 @@
   .mvv .mvv__info .mvv__info--description { font-size: 16px; }
 
   .contacts .contacts__title { font-size: clamp(20px, 4vw, 28px); }
-  .contacts .contacts__info {
-    display: grid; grid-template-columns: 1fr; gap: 10px; padding: 0 16px;
-  }
+  .contacts .contacts__info { display: grid; grid-template-columns: 1fr; gap: 10px; padding: 0 16px; }
   .contacts .contacts__info .contacts__info--container .contacts__info--img { height: 22px; margin-right: 10px; }
   .contacts .contacts__info .contacts__info--container .contacts__info--description { font-size: 15px; }
   .contacts .contacts__socialmedia { margin-top: 16px; }
-  .contacts .contacts__socialmedia .contacts__socialmedia--btn img {
-    height: 44px; width: auto; border-radius: 999px; margin: 8px;
-  }
+  .contacts .contacts__socialmedia .contacts__socialmedia--btn img { height: 44px; width: auto; border-radius: 999px; margin: 8px; }
 }
 
 @media (max-width: 768px) {
-  /* Títulos y textos un poco más grandes vs. vw original */
   .aboutme .aboutme__info .aboutme__info--description,
   .professional_goals .professional_goals__info .professional_goals__info--description,
   .services .services__info .services__info--description,
   .services .services__info ul li > p,
   .mvv .mvv__info .mvv__info--description { font-size: 15.5px; }
-  .skills .skills__container .skills__container--ability { width: 44vw; }
+
+  .skills .skills__container .skills__container--row .skills__container--ability {
+    flex-basis: calc(50% - 16px);
+  }
 }
 
 @media (max-width: 480px) {
@@ -164,5 +182,5 @@
   .banner .banner__bgfilter .banner__bgfilter--btn { width: 160px; height: 40px; font-size: 13px; }
   .projects .projects__card .projects__card--infocontainer__technologies img { height: 24px; }
   .projects .projects__card .projects__card--infocontainer .projects__card--infocontainer__description { font-size: 14.5px; }
-  .services .services__info ul li h2 { font-size: 18px; }
+  .services .services__info ul li h3 { font-size: 18px; }
 }
