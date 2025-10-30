@@ -28,7 +28,7 @@ El sitio está pensado como **single-page** con navegación por anclas.
 ## Ir al sitio:
 
 <a href="https://dante-sal.github.io/Portafolio_DanteSalamanca/">
-   <img src="https://img.shields.io/badge/Portafolio-Web-blue?style=flat&logo=google-chrome" alt="Portfolio">
+   <img src="https://img.shields.io/badge/Portafolio-Web-blue?style=flat&logo=google-chrome&logoColor=white" alt="Portfolio">
 </a>
 
 ## Estructura del proyecto
@@ -132,6 +132,6 @@ Este sitio se distribuye para uso personal. Si se clona estructura o estilos a m
     <img src="https://img.shields.io/badge/GitHub-Dante_Sal-black?style=flat&logo=github" alt="GitHub">
   </a>
   <a href="https://www.linkedin.com/in/sim%C3%B3n-dante-salamanca-galvis-5370b2356/?profileId=ACoAAFilq3sBrRfMRLrRXmGbFXxmwU-fWU8LsGo">
-    <img src="https://img.shields.io/badge/LinkedIn-Conecta-0A66C2" alt="LinkedIn">
+    <img src="https://custom-icon-badges.demolab.com/badge/LinkedIn-Conecta-0A66C2?logo=linkedin-white&logoColor=fff" alt="LinkedIn">
   </a>
 </p>
